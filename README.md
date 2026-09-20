@@ -20,4 +20,6 @@ Modular, clean, and professional Klipper configurations and macros designed spec
 ## Installation (Via SSH)
 Connect to your printer via SSH and run the following command to download and execute the installer directly:
 
+```bash
 wget --no-check-certificate -qO- https://raw.githubusercontent.com/SnorritxD/k1c-2025-klipper-macros/refs/heads/main/install.sh | sh
+```

@@ -5,15 +5,15 @@
 
 CONFIG_DIR="/usr/data/printer_data/config"
 PRINTER_CFG="$CONFIG_DIR/printer.cfg"
-REPO_URL="https://raw.githubusercontent.com/SnorritxD/k1c-2025-klipper-macros/main"
+REPO_URL="https://raw.githubusercontent.com/SnorritxD/k1c-2025-klipper-macros/refs/heads/main"
 
 echo "=== Creality K1C (2025) Installatie Starten ==="
 
-# 1. Bestanden downloaden uit jouw GitHub repository
+# 1. Bestanden downloaden uit jouw GitHub repository via wget
 echo "[1/3] Configuratiebestanden downloaden uit GitHub..."
-curl -sSL "$REPO_URL/config/hardware.cfg" -o "$CONFIG_DIR/hardware.cfg"
-curl -sSL "$REPO_URL/config/gcode-macro.cfg" -o "$CONFIG_DIR/gcode-macro.cfg"
-curl -sSL "$REPO_URL/scripts/git_backup.sh" -o "$CONFIG_DIR/git_backup.sh"
+wget --no-check-certificate -qO "$CONFIG_DIR/hardware.cfg" "$REPO_URL/config/hardware.cfg"
+wget --no-check-certificate -qO "$CONFIG_DIR/gcode-macro.cfg" "$REPO_URL/config/gcode-macro.cfg"
+wget --no-check-certificate -qO "$CONFIG_DIR/git_backup.sh" "$REPO_URL/scripts/git_backup.sh"
 
 # 2. Rechten goedzetten voor het backup script
 if [ -f "$CONFIG_DIR/git_backup.sh" ]; then

@@ -4,11 +4,17 @@ Modular, clean, and professional Klipper configurations and macros designed spec
 
 ## Repository Structure
 ├── README.md
+
 ├── install.sh
+
 ├── config/
+
 │   ├── hardware.cfg
+
 │   └── gcode-macro.cfg
+
 └── scripts/
+
     └── git_backup.sh
 
 ## Features

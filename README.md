@@ -1,4 +1,6 @@
+<p align="center">
 # 🖨️ Creality K1C (2025) — Klipper Macros & Hardware Config
+</p>
 
 <p align="center">
   <strong>A modular Klipper configuration for the Creality K1C 2025</strong>

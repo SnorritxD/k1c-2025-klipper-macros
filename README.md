@@ -1,17 +1,17 @@
+<div align="center">
+
 # 🖨️ Creality K1C (2025) — Klipper Macros & Hardware Config
 
-<p align="center">
-  <strong>A modular Klipper configuration for the Creality K1C 2025</strong>
-  <br>
-  Hardware configuration, print macros, filament management and GitHub backup integration.
-</p>
+**A modular Klipper configuration for the Creality K1C 2025**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Printer-Creality%20K1C%202025-blue?style=for-the-badge" alt="Creality K1C 2025">
-  <img src="https://img.shields.io/badge/Firmware-Klipper-orange?style=for-the-badge" alt="Klipper">
-  <img src="https://img.shields.io/badge/Architecture-X2600-informational?style=for-the-badge" alt="X2600">
-  <img src="https://img.shields.io/badge/Platform-Creality%20OS-lightgrey?style=for-the-badge" alt="Creality OS">
-</p>
+Hardware configuration, print macros, filament management and GitHub backup integration.
+
+<img src="https://img.shields.io/badge/Printer-Creality%20K1C%202025-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Firmware-Klipper-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Architecture-X2600-informational?style=for-the-badge">
+<img src="https://img.shields.io/badge/Platform-Creality%20OS-lightgrey?style=for-the-badge">
+
+</div>
 
 ---
 

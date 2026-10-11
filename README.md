@@ -1,44 +1,52 @@
+<p align="center">
+
 # 🖨️ Creality K1C (2025) — Klipper Macros & Hardware Config
 
-<p align="center">
-  <strong>A modular Klipper configuration for the Creality K1C 2025</strong>
-  <br>
-  Hardware configuration, print macros, filament management and GitHub backup integration.
-</p>
+<strong>A modular Klipper configuration for the Creality K1C 2025</strong>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Printer-Creality%20K1C%202025-blue?style=for-the-badge" alt="Creality K1C 2025">
-  <img src="https://img.shields.io/badge/Firmware-Klipper-orange?style=for-the-badge" alt="Klipper">
-  <img src="https://img.shields.io/badge/Architecture-X2600-informational?style=for-the-badge" alt="X2600">
-  <img src="https://img.shields.io/badge/Platform-Creality%20OS-lightgrey?style=for-the-badge" alt="Creality OS">
+Hardware configuration, print macros, filament management and GitHub backup integration.
+
+<img src="https://img.shields.io/badge/Printer-Creality%20K1C%202025-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Firmware-Klipper-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Architecture-X2600-informational?style=for-the-badge">
+<img src="https://img.shields.io/badge/Platform-Creality%20OS-lightgrey?style=for-the-badge">
+
 </p>
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-This project provides a modular collection of Klipper configuration files and G-code macros designed for the **Creality K1C 2025**, including compatible systems based on the Ingenic X2600 board.
+This project provides a modular collection of Klipper configuration files and G-code macros designed for the **Creality K1C 2025**, including compatible systems based on the **Ingenic X2600** board.
 
 The goal is to keep hardware-specific configuration separate from logical print macros, making the setup easier to maintain, troubleshoot and extend.
 
-Instead of keeping everything in one large configuration file, this project organizes the configuration into dedicated files that can be managed independently.
+Instead of keeping everything inside one large configuration file, this project separates configuration components into dedicated files that can be managed independently.
 
-> [!IMPORTANT]
-> This project targets the Creality K1C 2025. Compatibility with other K1C revisions, firmware versions and hardware configurations is not guaranteed. Always review the configuration files before installing them.
+> ⚠️ **Important**
+>
+> This project targets the Creality K1C 2025.
+> Compatibility with other K1C revisions, firmware versions and hardware configurations is not guaranteed.
+> Always review the configuration files before installation.
 
-## ✨ Features
+---
+
+# ✨ Features
 
 | Feature | Description |
 |---|---|
-| 🧩 **Modular configuration** | Separates hardware definitions from G-code macros. |
-| 🔥 **Print start and end** | Provides print workflow macros defined in `gcode-macro.cfg`. |
-| 🧵 **Filament management** | Includes filament-related macros intended for the supported extruder and nozzle configuration. |
-| 🌀 **Hardware definitions** | Organizes supported fan and filament-sensor configuration in `hardware.cfg`. |
-| ☁️ **GitHub backup integration** | Includes a Git backup script for configuration management. |
-| ⚙️ **Deployment installer** | Downloads the configuration files and adds the required includes to `printer.cfg`. |
-| 🛠️ **Maintainable structure** | Keeps configuration components separate for easier debugging and updates. |
+| 🧩 Modular configuration | Separates hardware definitions from G-code macros. |
+| 🔥 Print start and end | Provides print workflow macros defined in `gcode-macro.cfg`. |
+| 🧵 Filament management | Includes filament-related macros intended for the supported extruder and nozzle configuration. |
+| 🌀 Hardware definitions | Organizes supported fan and filament sensor configuration in `hardware.cfg`. |
+| ☁️ GitHub backup integration | Includes a Git backup script for configuration management. |
+| ⚙️ Deployment installer | Downloads configuration files and adds required includes to `printer.cfg`. |
+| 🛠️ Maintainable structure | Keeps configuration components separate for easier debugging and updates. |
 
-## 📁 Repository Structure
+---
+
+# 📁 Repository Structure
+
 
 ```text
 k1c-2025-klipper-macros/

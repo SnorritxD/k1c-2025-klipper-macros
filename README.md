@@ -117,6 +117,30 @@ Check that Klipper starts successfully and that no configuration errors are repo
 
 ---
 
+## 🖨️ OrcaSlicer Configuration
+
+To use the project's `PRINT_START` macro, configure the following start G-code in OrcaSlicer.
+
+### Start G-code
+
+Add this to the printer profile's **Start G-code** field in OrcaSlicer:
+
+```gcode
+M104 S0 ; Prevent OrcaSlicer from heating the nozzle outside the macro
+M140 S0 ; Prevent OrcaSlicer from heating the bed outside the macro
+
+PRINT_START EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] CHAMBER_TEMP=[chamber_temperature] MATERIAL=[filament_type]
+```
+
+The `M104 S0` and `M140 S0` commands prevent OrcaSlicer from starting nozzle or bed heating independently before `PRINT_START` runs.
+
+The `PRINT_START` command passes the initial-layer nozzle temperature, initial-layer bed temperature, chamber temperature and filament type to the macro.
+
+> [!IMPORTANT]
+> The parameter names in this start G-code must match the parameters defined by your `PRINT_START` macro in `gcode-macro.cfg`. Verify that the macro accepts `EXTRUDER_TEMP`, `BED_TEMP`, `CHAMBER_TEMP` and `MATERIAL` before using this configuration.
+
+---
+
 ## ⚙️ What Does the Installer Do?
 
 The installer performs three main operations.

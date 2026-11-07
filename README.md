@@ -126,8 +126,8 @@ To use the project's `PRINT_START` macro, configure the following start G-code i
 Add this to the printer profile's **Start G-code** field in OrcaSlicer:
 
 ```gcode
-M104 S0 ; Voorkomt voorverwarmen van de nozzle buiten PRINT_START
-M140 S0 ; Voorkomt voorverwarmen van het bed buiten PRINT_START
+M104 S0 ; Prevents the nozzle from heating up before PRINT_START
+M140 S0 ; Prevents the bed from heating up before PRINT_START
 
 PRINT_START EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] CHAMBER=[chamber_temperature] MATERIAL=[filament_type]
 ```
